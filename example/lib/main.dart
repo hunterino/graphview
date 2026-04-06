@@ -1,4 +1,5 @@
 import 'package:example/algorithm_selector_graphview.dart';
+import 'package:example/colored_edges_graphview.dart';
 import 'package:example/decision_tree_screen.dart';
 import 'package:example/large_tree_graphview.dart';
 import 'package:example/layer_graphview.dart';
@@ -101,6 +102,13 @@ class Home extends StatelessWidget {
             ),
           ]),
           _buildSection('Layered Algorithms', [
+            _buildButton(
+              'Colored Edges',
+              'Per-edge colors by type',
+              Icons.palette,
+              Colors.deepOrange,
+              () => ColoredEdgesPage(),
+            ),
             _buildButton(
               'Layered View',
               'Sugiyama Algorithm',
